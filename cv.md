@@ -54,3 +54,27 @@ For the first time "Hello world!" I wrote in the summer of 2020. I wanted to und
 - [https://sviatoslav-fls.github.io/WebDev/](https://sviatoslav-fls.github.io/WebDev/)
 - [https://sviatoslav-fls.github.io/Creatives/](https://sviatoslav-fls.github.io/Creatives/)
 - [https://sviatoslav-fls.github.io/John-portfolio/](https://sviatoslav-fls.github.io/John-portfolio/)
+
+### Self-Education:
+- "The Complete JavaScript Course 2021" by Jonas Schmedtmann (...in the process of studying)
+- Course "Command Line Power User" by Wes Bos
+- Course "JavaScript" by m1m0
+- Intensive "Your Willberries in JavaScript"
+- Course "Git. Basic course" by GeekBrains
+- Course on layout "Freelancer for life" by Andrikanych
+- Course "Web Development" by mlm0
+- "CS50's Introduction to Computer Science"
+- Course "Web Development" by Petrichenko
+
+### Education:
+- Donetsk Institute of Entrepreneurship, Faculty of Economics, Management of organizations
+
+### Language:
+- Russian (native)
+- English (B1)
+- Ukrainian (C1)
+
+### Hobby:
+- kitesurfing
+- running
+- boardgames
