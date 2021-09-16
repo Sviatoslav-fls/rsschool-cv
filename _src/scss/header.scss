@@ -11,14 +11,12 @@ header {
     min-height: 250px;
     background-color: rgb(4, 23, 52);
     color: #fff;
-    // border: 7px solid #fff;
     padding: 20px 50px 20px 20px !important;
-    @media (max-width: $md3+px) {
-      border: 5px solid #fff;
+    @media (max-width: $md2+px) {
+      padding: 20px !important;
     }
-    @media (max-width: 380px) {
+    @media (max-width: 420px) {
       flex-direction: column-reverse;
-      border: 3px solid #fff;
     }
   }
   &__content {
@@ -29,9 +27,9 @@ header {
     padding-right: 20px;
     @media (max-width: $md3+px) {
       align-items: flex-start;
-      flex: 0 1 60%;
+      flex: 0 1 50%;
     }
-    @media (max-width: 380px) {
+    @media (max-width: 420px) {
       padding-right: 0;
     }
   }
@@ -58,11 +56,12 @@ header {
       border-radius: 0%;
       flex: 0 0 150px;
     }
-    @media (max-width: 380px) {
-      flex: 0 0 100px;
-      height: 100px;
-      width: 100px;
+    @media (max-width: 420px) {
+      flex: 0 0 150px;
+      height: 150px;
+      width: 150px;
       margin-bottom: 20px;
+      margin-top: 30px;
     }
   }
   // .header__name
@@ -72,6 +71,12 @@ header {
     margin-bottom: 30px;
     align-self: left;
     line-height: 1.2;
+    @media (max-width: $md3+px) {
+      font-size: 40px;
+    }
+    @media (max-width: 420px) {
+      font-size: 32px;
+    }
   }
   // .header__location
   &__location {
@@ -106,7 +111,10 @@ header {
       margin-right: 10px;
       color: #fff;
     }
-    @media (max-width: 380px) {
+    @media (max-width: $md3+px) {
+      margin-bottom: 25px;
+    }
+    @media (max-width: 420px) {
       margin-right: 0;
     }
   }
