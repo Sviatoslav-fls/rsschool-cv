@@ -1,0 +1,354 @@
+//====================================================================================================
+
+//====================================================================================================
+.cv-page {
+  // .cv-page__container
+  &__container {
+    background-color: #fff;
+  }
+  // .cv-page__item
+  &__item {
+  }
+}
+
+.item-cv {
+  // background-color: lighten(rgb(4, 23, 52, 0.2), 15);
+
+  display: flex;
+  padding: 20px 50px 0;
+  align-items: center;
+  @media (max-width: $md3+px) {
+    padding: 20px 0 0;
+  }
+  @media (max-width: $md4+px) {
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 1px solid #000;
+    &:last-child {
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+  }
+  // .item-cv__header
+  &__header {
+    flex: 0 1 25%;
+    font-size: 21px;
+    &_summary {
+      padding-top: 50px;
+    }
+    @include adaptiv-value(font, 21, 16, 1);
+    text-transform: uppercase;
+    align-self: flex-start;
+    font-weight: bold;
+    padding-right: 20px;
+    @media (max-width: $md4+px) {
+      margin-bottom: 20px;
+      padding-right: 0;
+    }
+  }
+  // .item-cv__info
+  &__info {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 75%;
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+    line-height: 1.2;
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+      &::before {
+        margin-right: 10px;
+        font-size: 7px;
+      }
+      &:nth-child(odd) {
+        &::before {
+          color: red;
+        }
+      }
+      &:nth-child(even) {
+        &::before {
+          color: blue;
+        }
+      }
+    }
+    @media (max-width: $md4+px) {
+      border-bottom: none;
+    }
+    &_summary {
+      padding-top: 50px;
+    }
+    &_works {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-bottom: 5px;
+      li {
+        margin-bottom: 15px;
+        &:not(:last-child) {
+          margin-right: 15px;
+        }
+      }
+    }
+    &_skills {
+      text-transform: uppercase;
+      flex-direction: row;
+      @media (max-width: $md4+px) {
+        align-self: center;
+      }
+    }
+    &_hobby {
+      border-bottom: none;
+      flex-direction: row;
+      li {
+        margin-right: 15px;
+      }
+    }
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 50%;
+    &:not(:last-child) {
+      padding-right: 20px;
+    }
+    li {
+      display: flex;
+      align-items: center;
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+  &__link {
+    color: inherit;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+    transition: all 0.3s ease 0s;
+    &::before {
+      font-size: 40px;
+    }
+    @media (min-width: $md2+px) {
+      &:hover {
+        color: #fff;
+        box-shadow: inset 2px 2px 2px #fff, inset -2px -2px 2px #fff;
+        background-color: #041734;
+      }
+      &:active {
+        background-color: lighten($color: #041734, $amount: 20);
+      }
+    }
+  }
+  // .item-cv__lang
+  &__lang {
+    &::before {
+      content: "";
+      height: 20px;
+      width: 30px;
+      display: inline-flex;
+    }
+    // .item-cv__lang_ru
+    &_ru {
+      &::before {
+        background: url("../img/langs/ru.svg") 0 0 / contain no-repeat;
+      }
+    }
+    // .item-cv__lang_ua
+    &_ua {
+      &::before {
+        background: url("../img/langs/ua.svg") 0 0 / contain no-repeat;
+      }
+    }
+    // .item-cv__lang_us
+    &_us {
+      &::before {
+        background: url("../img/langs/us.svg") 0 0 / contain no-repeat;
+      }
+    }
+  }
+  // .item-cv__container
+  &__cards-container {
+    display: flex;
+    flex: 0 1 75%;
+    // padding: 0 15px;
+    margin: 0 -15px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+  }
+  // .item-cv__card
+  &__card {
+  }
+}
+
+.card {
+  flex: 0 1 33.333%;
+  padding: 15px;
+  overflow: hidden;
+  color: inherit;
+  transition: all 0.3s ease 0s;
+  &:hover {
+    .card__wrap {
+      background-color: rgb(4, 23, 52);
+      color: #fff;
+      box-shadow: inset -3px -3px 5px #fff, inset 3px 3px 5px #fff;
+      // border: 1px solid rgb(4, 23, 52);
+    }
+    .card__img {
+      box-shadow: none;
+      box-shadow: 0 2px 5px #fff;
+      transform: scale(0.95);
+      overflow: hidden;
+    }
+  }
+
+  &__wrap {
+    position: relative;
+    height: 100%;
+    padding-bottom: 20px;
+    // border: 1px solid transparent;
+  }
+
+  // .card__img
+  &__img {
+    height: 160px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgb(4, 23, 52);
+    img {
+      width: 100%;
+    }
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  // .card__title
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-decoration: underline;
+  }
+  &__descr {
+    margin-bottom: 15px;
+    line-height: 1.2;
+    span {
+      text-decoration: underline;
+    }
+  }
+  &__skills {
+    text-align: right;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+  // .card__descr
+  &__skill {
+    width: 40px;
+    height: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 5px;
+
+    &_html {
+      background-color: red;
+    }
+    &_css {
+      background-color: blue;
+    }
+    &_js {
+      background-color: #ffc600;
+    }
+  }
+}
+
+.skill {
+  // .skill__item
+  &__item {
+    &::before {
+      content: "";
+      display: inline-flex;
+      height: 30px;
+      width: 30px;
+    }
+    // .skill__item_html
+    &_html {
+      &::before {
+        background: url("../img/skills/html.svg") 0 0 / contain no-repeat;
+      }
+    }
+    // .skill__item_css
+    &_css {
+      &::before {
+        background: url("../img/skills/css.svg") 0 0 / contain no-repeat;
+      }
+    }
+    // .skill__item_flex
+    &_flex {
+      &::before {
+        background: url("../img/skills/flex.png") 0 3px / contain no-repeat;
+      }
+    }
+    // .skill__item_bem
+    &_bem {
+      &::before {
+        background: url("../img/skills/bem.svg") 0 0 / contain no-repeat;
+      }
+    }
+    // .skill__item_git
+    &_git {
+      &::before {
+        background: url("../img/skills/git.svg") 0 0 / contain no-repeat;
+      }
+    }
+    // .skill__item_gulp
+    &_gulp {
+      &::before {
+        background: url("../img/skills/gulp.svg") 0 0 / contain no-repeat;
+      }
+    }
+    // .skill__item_js
+    &_js {
+      &::before {
+        background: url("../img/skills/javascript.svg") 0 0 / cover no-repeat;
+      }
+    }
+    // .skill__item_avocode
+    &_avocode {
+      &::before {
+        background: url("../img/skills/avocode.svg") 0 0 / contain no-repeat;
+      }
+    }
+    // .skill__item_figma
+    &_figma {
+      &::before {
+        background: url("../img/skills/figma.svg") -2px 0 / contain no-repeat;
+      }
+    }
+    // .skill__item_vs-code
+    &_vs-code {
+      &::before {
+        background: url("../img/skills/vs_code.svg") -2px 0 / contain no-repeat;
+      }
+    }
+    // .skill__item_ph
+    &_ph {
+      &::before {
+        background: url("../img/skills/photoshop.svg") 0 0 / contain no-repeat;
+      }
+    }
+    // .skill__item_il
+    &_il {
+      &::before {
+        background: url("../img/skills/illustrator.svg") 0 0 / contain no-repeat;
+      }
+    }
+  }
+}
