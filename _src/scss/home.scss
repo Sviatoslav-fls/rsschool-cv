@@ -1,6 +1,9 @@
 //====================================================================================================
 
 //====================================================================================================
+html {
+  scroll-behavior: smooth;
+}
 .cv-page {
   // .cv-page__container
   &__container {
@@ -15,7 +18,7 @@
   // background-color: lighten(rgb(4, 23, 52, 0.2), 15);
   display: flex;
   padding: 20px 50px 0;
-  &_scills {
+  &_skills {
     @media (max-width: $md3+px) {
       align-items: center;
     }
@@ -25,7 +28,9 @@
   @media (max-width: $md3+px) {
     padding: 20px 0 0;
     flex-direction: column;
-    border-bottom: 1px solid #000;
+    &:not(:last-child) {
+      border-bottom: 1px solid #000;
+    }
   }
   @media (max-width: $md4+px) {
     flex-direction: column;

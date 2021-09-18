@@ -56,6 +56,9 @@ body {
   display: flex;
   flex-direction: column;
   background-color: lighten(rgb(4, 23, 52), 5);
+  @media (max-width: $md3+px) {
+    background-color: rgb(4, 23, 52);
+  }
 
   &._loaded {
   }
@@ -69,6 +72,10 @@ body {
   border-left: solid 2px rgb(4, 23, 52);
   border-right: solid 2px rgb(4, 23, 52);
   box-shadow: 0 0 10px #fff;
+  @media (max-width: $md3+px) {
+    border: none;
+    box-shadow: none;
+  }
 
   @media (max-width: $md1 + px) {
     // max-width: 970px;
