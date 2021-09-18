@@ -50,6 +50,7 @@
     @media (max-width: $md2+px) {
       flex: 0 0 200px;
       height: 200px;
+      transform: translateY(35%);
     }
     @media (max-width: $md3+px) {
       transform: translateY(0);

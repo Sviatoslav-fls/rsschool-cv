@@ -37,9 +37,6 @@ $mainColor: #484848;
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 @import "null";
 body {
-  // background-color: #e6e6e6;
-  // background-color: #d8edf5;
-  // color: #484848;
   font-size: 16px;
   color: $mainColor;
   &._lock {

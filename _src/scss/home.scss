@@ -13,9 +13,27 @@ html {
   &__item {
   }
 }
+#my-code {
+  overflow: hidden;
+  @media (max-width: $md3+px) {
+    border-bottom: none;
+  }
+}
+#self-education {
+  @media (min-width: $md3+px) {
+    padding-top: 0;
+  }
+  @media (max-width: $md3+px) {
+    border-top: 1px solid #000;
+  }
+}
+
+.hljs {
+  background: rgb(4, 23, 52) !important;
+  overflow-x: auto;
+}
 
 .item-cv {
-  // background-color: lighten(rgb(4, 23, 52, 0.2), 15);
   display: flex;
   padding: 20px 50px 0;
   &_skills {
@@ -119,6 +137,7 @@ html {
       flex-direction: row;
       flex-wrap: wrap;
       padding-bottom: 5px;
+
       li {
         margin-bottom: 15px;
         &:not(:last-child) {
@@ -185,9 +204,10 @@ html {
       }
     }
   }
-  // &__code {
-  //   flex: 0 1 75%;
-  // }
+  &__code {
+    flex: 0 1 75%;
+  }
+
   // .item-cv__lang
   &__lang {
     &::before {
@@ -219,17 +239,18 @@ html {
   &__cards-container {
     display: flex;
     flex: 0 1 75%;
-    // padding: 0 15px;
-    margin: 0 -15px;
+    // margin: 0 -15px;
     flex-wrap: wrap;
-    // border-bottom: 1px solid #000;
-    // padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+    @media (max-width: $md3+px) {
+      border-bottom: none;
+    }
   }
   // .item-cv__card
   &__card {
   }
 }
-
 .card {
   flex: 0 1 33.333%;
   padding: 15px;
@@ -243,7 +264,6 @@ html {
         background-color: rgb(4, 23, 52);
         color: #fff;
         box-shadow: inset -3px -3px 5px #fff, inset 3px 3px 5px #fff;
-        // border: 1px solid rgb(4, 23, 52);
       }
       .card__img {
         box-shadow: none;
@@ -256,12 +276,14 @@ html {
   @media (max-width: $md2+px) {
     flex: 0 1 50%;
   }
+  @media (max-width: 380px) {
+    flex: 0 1 100%;
+  }
 
   &__wrap {
     position: relative;
     height: 100%;
     padding-bottom: 20px;
-    // border: 1px solid transparent;
   }
 
   // .card__img
