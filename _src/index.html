@@ -36,20 +36,6 @@
             </ul>
           </div>
         </section>
-        <!-- <section class="cv-page__item item-cv">
-          <h2 class="item-cv__header">My works</h2>
-          <ul class="item-cv__info item-cv__info_works">
-            <li><a class="item-cv__link" href="https://sviatoslav-fls.github.io/charismo/" target="_blank">Charismo</a></li>
-            <li><a class="item-cv__link" href="https://sviatoslav-fls.github.io/eyelashes/" target="_blank">Eyelashes</a></li>
-            <li><a class="item-cv__link" href="https://sviatoslav-fls.github.io/swimming/" target="_blank">Swimming</a></li>
-            <li><a class="item-cv__link" href="https://sviatoslav-fls.github.io/Waxom/" target="_blank">Waxom</a></li>
-            <li><a class="item-cv__link" href="https://sviatoslav-fls.github.io/AppLab/" target="_blank">AppLab</a></li>
-            <li><a class="item-cv__link" href="https://sviatoslav-fls.github.io/WebDev/" target=" _blank">WebDev</a></li>
-            <li><a class="item-cv__link" href="https://sviatoslav-fls.github.io/Creatives/" target=" _blank">Creatives</a></li>
-            <li><a class="item-cv__link" href="https://sviatoslav-fls.github.io/John-portfolio/" target="_blank">John-portfolio</a></li>
-          </ul>
-        </section> -->
-
         <section class="cv-page__item item-cv" id="my-works">
           <h2 class="item-cv__header">My works</h2>
           <div class="item-cv__cards-container">
@@ -182,21 +168,26 @@
           </div>
         </section>
 
-        <!-- <section class="cv-page__item item-cv" id="my-code">
+        <section class="cv-page__item item-cv" id="my-code">
           <h2 class="item-cv__header">Code example</h2>
           <div class="item-cv__code">
             <pre>
               <code class="javascript">
-                let x = 'kejbvkjebfvkjbefgjbkjgb;lrj'bjr'jn'rkn'lrkn'lkr'lk';
-                const vasy = {};
+  function myLanguages(results) {
+    const lang = Object.keys(results)
+    .filter(v => results[v] >= 60)
+    .sort((a, b) => results[b] - results[a])
+                
+    return lang
+  }
               </code>
             </pre>
           </div>
-        </section> -->
+        </section>
 
         <section class="cv-page__item item-cv" id="self-education">
           <h2 class="item-cv__header item-cv__header_self">Self-Education</h2>
-          <ul class="item-cv__info item-cv__info item-cv__info_self">
+          <ul class="item-cv__info item-cv__info_self">
             <li class="_icon-diamond">Course "JavaScript / Front-end" by RS School (Sep - ... 2021) </li>
             <li class="_icon-diamond">"The Complete JavaScript Course 2021" by Jonas Schmedtmann (...in the process of studying)</li>
             <li class="_icon-diamond">"Preparatory course “JavaScript / Front-end. Stage 0" by RS School (Jul-Sep 2021)</li>
