@@ -30,8 +30,10 @@ footer {
     img {
       width: 100%;
     }
-    &:hover {
-      background-color: yellow;
+    @media (min-width: $md2+px) {
+      &:hover {
+        background-color: #fecb00;
+      }
     }
     &_github {
       width: 50px;
