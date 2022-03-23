@@ -43,3 +43,27 @@ function arithmetic(a, b, operator){
 - [AppLab](https://sviatoslav-fls.github.io/AppLab/)
 - [WebDev](https://sviatoslav-fls.github.io/WebDev/)
 - [Creatives](https://sviatoslav-fls.github.io/Creatives/)
+### Self - Education:
+- "JavaScript/Front-end. Stage 0" by The Rolling Scopes
+- "The Complete JavaScript Course" by Jonas Schmedtmann(...in the process of studying)
+- Course "Command Line Power User" by Wes Bos
+- Course "JavaScript" by mimo
+- Intensive "Your Willberries in JavaScript"
+- Course "Git. Basic course" by GeekBrains
+- Course on layout "Freelancer for life" by Andrikanych
+- Course "Web Development" by mlm0
+- "CS50's Introduction to Computer Science"
+- Course "Web Development" by Petrichenko
+
+### Education:
+- Donetsk Institute of Entrepreneurship, Faculty of Economics, Management of organizations
+
+### Language:
+- Russian(native)
+- English(B1)
+- Ukrainian(C1)
+
+### Hobby:
+- kitesurfing
+- running
+- boardgames
