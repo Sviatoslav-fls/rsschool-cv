@@ -1,0 +1,381 @@
+@import url(https://fonts.googleapis.com/css?family=Cormorant+Garamond:regular,700&display=swap&subset=cyrillic-ext);
+
+@font-face {
+  font-family: "icons";
+  font-display: swap;
+  src: url("assets/fonts/icons.woff2") format("woff2"), url("assets/fonts/icons.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "icons";
+  font-display: swap;
+  src: url("assets/fonts/icons.woff") format("woff"), url("assets/fonts/icons.woff2#icons") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"]:before,
+[class*=" _icon-"]:before {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="_icon-"]:before,
+[class*=" _icon-"]:before {
+  display: block;
+}
+
+._icon-boardgames:before {
+  content: "\e905";
+}
+
+._icon-running:before {
+  content: "\e906";
+}
+
+._icon-kitesurfing:before {
+  content: "\e907";
+}
+
+._icon-diamond:before {
+  content: "\e904";
+}
+
+._icon-envelope:before {
+  content: "\e900";
+}
+
+._icon-telegram:before {
+  content: "\e901";
+}
+
+._icon-location:before {
+  content: "\e902";
+}
+
+._icon-discord:before {
+  content: "\e903";
+  color: #7289da;
+}
+
+._icon-phone:before {
+  content: "\e942";
+}
+
+._icon-github:before {
+  content: "\eab0";
+}
+
+/* ========================================================= */
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+html {
+  font-size: 16px;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+
+body {
+  line-height: 1;
+  font-family: "Garamond";
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: "Garamond";
+  font-size: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: inherit;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+/* ========================================================= */
+
+body {
+  font-size: 16px;
+  color: #484848;
+}
+
+body._lock {
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #06214c;
+}
+
+._container {
+  max-width: 1170px;
+  margin: 0 auto;
+  border-left: solid 2px #041734;
+  border-right: solid 2px #041734;
+  -webkit-box-shadow: 0 0 10px #fff;
+  box-shadow: 0 0 10px #fff;
+}
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.header__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 250px;
+  color: #fff;
+  background-color: #041734;
+  padding: 0px 50px 20px 20px !important;
+}
+
+.header__content {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 70%;
+  flex: 0 1 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-right: 20px;
+}
+
+.header__image {
+  border-radius: 50%;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 250px;
+  flex: 0 0 250px;
+  height: 250px;
+  border: 7px solid #fff;
+  overflow: hidden;
+  -webkit-transform: translateY(30%);
+  -ms-transform: translateY(30%);
+  transform: translateY(30%);
+}
+
+.header__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.header__name {
+  font-size: 50px;
+  font: 50px;
+  margin-bottom: 30px;
+  -ms-flex-item-align: left;
+  -ms-grid-row-align: left;
+  align-self: left;
+  line-height: 1.2;
+}
+
+.header__location {
+  font-size: 18px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__location::before {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.contacts__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.contacts__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.contacts__item::before {
+  font-size: 16px;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.contacts__link {
+  color: #fff;
+  font-size: 16px;
+  position: relative;
+}
+
+.contacts__link::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.menu__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid gray;
+  background-color: #031126;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__link {
+  color: gray;
+  color: #fff;
+  position: relative;
+}
+
+.menu__link::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.icon-menu {
+  display: none;
+}
+
+.menu__list li:not(:last-child) {
+  margin-right: 30px;
+}
