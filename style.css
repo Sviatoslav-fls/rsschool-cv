@@ -746,3 +746,51 @@ body._lock {
   height: 30px;
   width: 30px;
 }
+@media (min-width: 991.98px) {
+  .contacts__link:hover::after {
+    content: "";
+    width: 100%;
+  }
+
+  .menu__link:hover {
+    color: #fff;
+  }
+
+  .menu__link:hover::after {
+    content: "";
+    width: 100%;
+  }
+
+  .footer__item:hover {
+    background-color: #fecb00;
+  }
+
+  .item-cv__link:hover {
+    color: #fff;
+    -webkit-box-shadow: inset 2px 2px 2px #fff, inset -2px -2px 2px #fff;
+    box-shadow: inset 2px 2px 2px #fff, inset -2px -2px 2px #fff;
+    background-color: #041734;
+  }
+
+  .item-cv__link:active {
+    background-color: #0b4193;
+  }
+
+  .card:hover .card__wrap {
+    background-color: #041734;
+    color: #fff;
+    -webkit-box-shadow: inset -3px -3px 5px #fff, inset 3px 3px 5px #fff;
+    box-shadow: inset -3px -3px 5px #fff, inset 3px 3px 5px #fff;
+  }
+
+  .card:hover .card__img {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-shadow: 0 2px 5px #fff;
+    box-shadow: 0 2px 5px #fff;
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+    overflow: hidden;
+  }
+}
