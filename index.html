@@ -319,8 +319,64 @@
             </a>
           </div>
         </section>
-
+        <section class="cv-page__item item-cv" id="my-code">
+          <h2 class="item-cv__header">Code example</h2>
+          <div class="item-cv__code">
+            <pre>
+              <code class="javascript">
+  function myLanguages(results) {
+    const lang = Object.keys(results)
+    .filter(v => results[v] >= 60)
+    .sort((a, b) => results[b] - results[a])
+                
+    return lang
+  }
+              </code>
+            </pre>
+          </div>
+        </section>
+        <section class="cv-page__item item-cv" id="self-education">
+          <h2 class="item-cv__header item-cv__header_self">Self-Education</h2>
+          <ul class="item-cv__info item-cv__info_self">
+            <li class="_icon-diamond">Course "JavaScript / Front-end" by RS School (Sep - ... 2021) </li>
+            <li class="_icon-diamond">"The Complete JavaScript Course" by Jonas Schmedtmann (...in the process of studying)</li>
+            <li class="_icon-diamond">"Preparatory course “JavaScript / Front-end. Stage 0" by RS School (Jul-Sep 2021)</li>
+            <li class="_icon-diamond">"JavaScript for beginners" by Code Basics</li>
+            <li class="_icon-diamond">"Command line power user" by Wes Bos</li>
+            <li class="_icon-diamond">"JavaScript" by mimo</li>
+            <li class="_icon-diamond">Intensive "Your Willberries in JavaScript"</li>
+            <li class="_icon-diamond">"Git. Basic course" by GeekBrains</li>
+            <li class="_icon-diamond">Course on layout "Freelancer for life" by Andrikanych (Sep-Dec 2020)</li>
+            <li class="_icon-diamond">"Web Development" by m1m0</li>
+            <li class="_icon-diamond">"CS50's Introduction to Computer Science"</li>
+            <li class="_icon-diamond">"Web Development" by Petrichenko</li>
+            <li class="_icon-diamond">...</li>
+          </ul>
+        </section>
+        <section class="cv-page__item item-cv" id="education">
+          <h2 class="item-cv__header">Education</h2>
+          <div class="item-cv__info">Donetsk Institute of Entrepreneurship, Faculty of Economics, Management of organizations (1995-2000)</div>
+        </section>
+        <section class="cv-page__item item-cv" id="languages">
+          <h2 class="item-cv__header">Languages</h2>
+          <ul class="item-cv__info">
+            <li class="item-cv__lang item-cv__lang_ru">Russian (native)</li>
+            <li class="item-cv__lang item-cv__lang_ua">Ukrainian (C1)</li>
+            <li class="item-cv__lang item-cv__lang_us">English (B1)</li>
+          </ul>
+        </section>
+        <section class="cv-page__item item-cv item-cv_hobby" id="hobbies">
+          <h2 class="item-cv__header">Hobbies</h2>
+          <ul class="item-cv__info item-cv__info_hobby">
+            <li><a class="item-cv__link _icon-kitesurfing" href="https://en.wikipedia.org/wiki/Kiteboarding" target="_blank"></a></li>
+            <li><a class="item-cv__link _icon-boardgames" href="https://en.wikipedia.org/wiki/Board_game" target="_blank"></a></li>
+            <li><a class="item-cv__link _icon-running" href="https://en.wikipedia.org/wiki/Running" target="_blank"></a></li>
+          </ul>
+        </section>
+      </div>
     </main>
+
+  </div>
 
 </body>
 

@@ -621,15 +621,15 @@ body._lock {
 }
 
 .item-cv__lang_ru::before {
-  background: url("../img/langs/ru.svg") 0 0 / contain no-repeat;
+  background: url("assets/img/langs/ru.svg") 0 0 / contain no-repeat;
 }
 
 .item-cv__lang_ua::before {
-  background: url("../img/langs/ua.svg") 0 0 / contain no-repeat;
+  background: url("assets/img/langs/ua.svg") 0 0 / contain no-repeat;
 }
 
 .item-cv__lang_us::before {
-  background: url("../img/langs/us.svg") 0 0 / contain no-repeat;
+  background: url("assets/img/langs/us.svg") 0 0 / contain no-repeat;
 }
 
 .item-cv__cards-container {
