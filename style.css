@@ -746,6 +746,54 @@ body._lock {
   height: 30px;
   width: 30px;
 }
+
+.footer__content {
+  background-color: #041734;
+  min-height: 100px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer__item {
+  height: 50px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease 0;
+  -o-transition: all 0.3s ease 0;
+  transition: all 0.3s ease 0;
+}
+
+.footer__item img {
+  width: 100%;
+}
+
+.footer__item_github {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.footer__item_school {
+  width: 150px;
+  border-radius: 2px;
+  padding: 3px;
+}
+
+.footer__item_school img {
+  height: 100%;
+}
+
+.footer__year {
+  font-weight: bold;
+  font-size: 20px;
+}
+
 @media (min-width: 991.98px) {
   .contacts__link:hover::after {
     content: "";
