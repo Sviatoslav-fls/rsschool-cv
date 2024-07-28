@@ -4,6 +4,7 @@ E-mail: [msv.fls@gmail.com]() ••• Telegram: [@mSviatoslav](http://t.me/mSv
 
 Hello! I'm a junior frontend developer.
 For the first time "Hello world!" I wrote in the summer of 2020. From that moment, my big and exciting adventure in the world of information technology began.I devote all my free time to learning new skills and improving old ones.I want to master a new profession and become a great frontend developer.I want to work in a team.
+
 ### Skills:
 + HTML
 + CSS
@@ -17,6 +18,7 @@ For the first time "Hello world!" I wrote in the summer of 2020. From that momen
 + Avocode
 + Adobe Photoshop
 + Adobe Illustrator
+
 ### Code examples:
 ``` JavaScript
 function arithmetic(a, b, operator){
@@ -42,3 +44,28 @@ function arithmetic(a, b, operator){
 - [AppLab](https://sviatoslav-fls.github.io/AppLab/)
 - [WebDev](https://sviatoslav-fls.github.io/WebDev/)
 - [Creatives](https://sviatoslav-fls.github.io/Creatives/)
+
+### Self - Education:
+- "JavaScript/Front-end. Stage 0" by The Rolling Scopes (2022)
+- "The Complete JavaScript Course" by Jonas Schmedtmann(...in the process of studying)
+- Course "Command Line Power User" by Wes Bos
+- Course "JavaScript" by mimo
+- Intensive "Your Willberries in JavaScript"
+- Course "Git. Basic course" by GeekBrains
+- Course on layout "Freelancer for life" by Andrikanych
+- Course "Web Development" by mlm0
+- "CS50's Introduction to Computer Science"
+- Course "Web Development" by Petrichenko
+
+### Education:
+- Donetsk Institute of Entrepreneurship, Faculty of Economics, Management of organizations
+
+### Language:
+- Russian(native)
+- English(B1)
+- Ukrainian(C1)
+
+### Hobby:
+- kitesurfing
+- running
+- boardgames
